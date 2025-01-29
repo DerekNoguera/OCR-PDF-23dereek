@@ -108,7 +108,8 @@ def upload_file():
 
 # Iniciamos el servidor de la aplicación en modo debug (útil para desarrollo)
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.getenv("PORT", 5000))  # Usa el puerto que Render asigna automáticamente
+    app.run(host='0.0.0.0', port=port)
 
 
 

@@ -3,3 +3,5 @@ easyocr
 werkzeug
 pdf2image
 numpy
+gunicorn
+
