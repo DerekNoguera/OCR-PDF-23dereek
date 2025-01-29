@@ -600,4 +600,5 @@ def upload_file():
 
 # Iniciar el servidor
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.getenv("PORT", 5000))  # Usa el puerto que Render asigna automáticamente
+    app.run(host='0.0.0.0', port=port)
