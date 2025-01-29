@@ -108,9 +108,9 @@ def upload_file():
 
 # Iniciamos el servidor de la aplicación en modo debug (útil para desarrollo)
 if __name__ == '__main__':
-    port = int(os.getenv("PORT", 5000))  # Usa el puerto que Render asigna automáticamente
+    # Se asegura de que el puerto sea 10000 por defecto si no está configurado en las variables de entorno
+    port = int(os.getenv("PORT", 10000))  # Usa el puerto proporcionado por Render o el 10000 como predeterminado
     app.run(host='0.0.0.0', port=port)
-
 
 
 
