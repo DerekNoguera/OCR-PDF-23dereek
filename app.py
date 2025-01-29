@@ -497,7 +497,7 @@ def get_google_sheets_service():
         CLIENT_SECRETS_FILE, SCOPES)
     
     # Usa la URL pública de ngrok
-    flow.redirect_uri = "https://ocr-pdf-23dereek.vercel.app/oauth2callback"  # Usa la URL HTTPS
+    flow.redirect_uri = "https://ocr-pdf-23dereek-1.onrender.com/oauth2callback"  # Usa la URL HTTPS
 
     authorization_url, state = flow.authorization_url(access_type='offline')
     session['state'] = state
