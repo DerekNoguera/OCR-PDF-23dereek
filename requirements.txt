@@ -8,3 +8,4 @@ scipy
 easyocr
 imageio
 pdf2image
+google-auth-oauthlib
