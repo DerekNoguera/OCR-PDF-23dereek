@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR - 23dereek</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FAF3E0;
+            color: #5A5A5A;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background: #FFF;
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #D27D2C;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        strong {
+            color: #A64B2A;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #D27D2C;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #B86420;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Datos extraídos</h1>
+        
+        <h2>Solicitado por:</h2>
+        <p><strong>Número:</strong> {{ data.Solicitado_por.Numero }}</p>
+        <p><strong>Nombre:</strong> {{ data.Solicitado_por.Nombre }}</p>
+        <p><strong>Teléfono:</strong> {{ data.Solicitado_por.Telefono }}</p>
+        <p><strong>Correo:</strong> {{ data.Solicitado_por.Correo }}</p>
+
+        <h2>Entregar a:</h2>
+        <p><strong>Nombre:</strong> {{ data.Entregar_a.Nombre }}</p>
+        <p><strong>Teléfono:</strong> {{ data.Entregar_a.Telefono }}</p>
+        <p><strong>Dirección:</strong> {{ data.Entregar_a.Direccion }}</p>
+        <p><strong>Notas:</strong> {{ data.Entregar_a.Notas }}</p>
+
+        <a href="/">Subir otro archivo</a>
+    </div>
+</body>
+</html>

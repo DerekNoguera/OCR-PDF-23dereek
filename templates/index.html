@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR - 23dereek</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FAF3E0;
+            color: #5A5A5A;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: #FFF;
+            padding: 20px;
+            max-width: 400px;
+            margin: 40px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #D27D2C;
+        }
+
+        input[type="file"] {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #D27D2C;
+            border-radius: 8px;
+            background-color: #FFF8F0;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #D27D2C;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #B86420;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sube tu PDF o Imagen</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf,.jpg,.jpeg,.png" required>
+            <br>
+            <button type="submit">Subir Archivo</button>
+        </form>
+    </div>
+</body>
+</html>
