@@ -1,13 +1,5 @@
 Flask
-torch
-torchvision
-opencv-python-headless
-Pillow
-numpy
-scipy
 easyocr
-imageio
+werkzeug
 pdf2image
-google-auth-oauthlib
-google-api-python-client
-gunicorn
+numpy
