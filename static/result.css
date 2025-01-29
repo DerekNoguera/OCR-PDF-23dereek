@@ -1,0 +1,63 @@
+/* Reseteo de márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F4F8; /* Fondo blanco suave */
+    color: #333; /* Color de texto oscuro para un buen contraste */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal donde se muestran los datos */
+.container {
+    background: #FFFFFF; /* Fondo blanco para el contenedor */
+    padding: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: left; /* Alineamos todo el texto a la izquierda */
+}
+
+/* Estilos de los encabezados */
+h1, h2 {
+    color: #1D3557; /* Azul oscuro para los encabezados */
+    margin-bottom: 20px; /* Espacio debajo de los encabezados */
+}
+
+/* Párrafos y etiquetas */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555; /* Gris suave para los párrafos */
+    margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+}
+
+/* Resaltar las etiquetas con un color diferente */
+strong {
+    color: #1D3557; /* Azul oscuro */
+}
+
+/* Estilo para el enlace */
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #1D3557; /* Azul oscuro */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+/* Estilo para el hover del enlace */
+a:hover {
+    background-color: #457B9D; /* Azul medio al hacer hover */
+}

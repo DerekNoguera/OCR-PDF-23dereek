@@ -1,0 +1,82 @@
+/* Reseteo de márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F4F8; /* Fondo blanco suave */
+    color: #333; /* Color de texto oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal donde se muestra el formulario */
+.container {
+    background: #FFFFFF; /* Fondo blanco para el contenedor */
+    padding: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: left; /* Alineamos todo el texto a la izquierda */
+}
+
+/* Estilos para el encabezado */
+h1 {
+    color: #1D3557; /* Azul oscuro */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+/* Estilo para el input tipo archivo */
+input[type="file"] {
+    margin: 20px 0;
+    padding: 12px;
+    border: 1px solid #1D3557; /* Borde azul oscuro */
+    border-radius: 8px;
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #1D3557; /* Texto azul oscuro */
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #1D3557; /* Azul oscuro */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo para el hover del botón */
+button:hover {
+    background-color: #457B9D; /* Azul medio al hacer hover */
+}
+
+/* Estilo para el texto de carga */
+#loading {
+    display: none;
+    margin-top: 20px;
+    color: #1D3557;
+    font-size: 18px;
+    display: none;
+    place-content: center;
+    place-self: center;
+}
+
+/* Estilo de error */
+.error {
+    color: #D32F2F;
+    margin-top: 20px;
+    font-size: 18px;
+}
