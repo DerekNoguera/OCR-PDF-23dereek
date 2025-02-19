@@ -9,3 +9,4 @@ def extract_text_from_image(image_path):
     text_data = "\n".join([text[1] for text in result])
     
     return text_data
+#@23dereek
